@@ -138,5 +138,34 @@ private:
 			objecttable = 0x418;
 			vadroot = 0x628;
 		}
+		// https://github.com/inc-Majdev/Blackbone-20H2/blob/master/src/BlackBoneDrv/BlackBoneDrv.c
+		else if (osVersion.dwBuildNumber == 17763)
+		{
+			protection = 0x6CA;
+			flags2 = 0x820;
+			objecttable = 0x418;
+			vadroot = 0x628;
+		}
+		else if (osVersion.dwBuildNumber == 18362 || osVersion.dwBuildNumber == 18363)
+		{
+			protection = 0x6FA;
+			flags2 = 0x850;
+			objecttable = 0x418;
+			vadroot = 0x658;
+		}
+		else if (osVersion.dwBuildNumber == 19041)
+		{
+			protection = 0x87A;
+			flags2 = 0x9D4;
+			objecttable = 0x570;
+			vadroot = 0x7D8;
+		}
+		else if (osVersion.dwBuildNumber == 19042)
+		{
+			protection = 0x87A;
+			flags2 = 0x9D4;
+			objecttable = 0x570;
+			vadroot = 0x7D8;
+		}
 	}
 };
